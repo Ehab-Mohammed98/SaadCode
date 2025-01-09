@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@1,300&display=swap');
+:root{
+    --drak-color:#2C3E59;
+    --crimson-color:#DC143C;
+    --ehab-color:#1ABC9C;
+    --shihab-color:#ccc;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo';
+    margin : 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: var(--drak-color);
+    color: white;
+    align-items: center;
+    position: fixed;
+    border-top:  4px solid var(--crimson-color);
+    padding: 20px 30px;
+    z-index: 999;
+    width: 100%;
+}
+header:hover{
+    border-top:  4px solid var(--ehab-color);
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 10px;
+    transition: ease 1s;
+}
+header a:hover{
+    color: var(--ehab-color);
+    font-size: 1.8rem;
+}
+header h2{
+    font-size: 1.6rem;
+}
+/*-- End header --*/
+/*-- Strat landeing --*/
+.landeing{
+height: 100vh;
+display: flex;
+align-items: center;
+color: white;
+background-size: cover;
+background-attachment: fixed;
+background-blend-mode: overlay;
+background-position: center;
+background-image: url(../images/Desktoop2.jpg);
+background-color:rgba(44,62,89,40%);
+}
+
+.landeing div{
+    margin-left: 80px;
+}
+.landeing p{
+    font-size: 2rem;
+}
+.landeing h2{
+    font-size: 1.8rem;
+    color: var(--drak-color);
+}
+
+.landeing span{
+    color: var(--crimson-color);
+}
+
+.landeing a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--ehab-color);
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.landeing a:hover{
+    transition: scale(1.2);
+    background: var(--drak-color);
+}
+/*-- End landeing --*/
+/*-- Strat services --*/
+.services .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 80px;
+}
+.services h2{
+   text-align: center;
+   margin: 30px 0px; 
+}
+.services .card{
+    margin-right:  20px;
+    box-shadow: 3px 3px 6px 6px var(--shihab-color);
+    padding: 10px;
+    width: 16em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.card h3{
+    color: var(--crimson-color);
+    text-align: center;
+    font-weight: 1000;
+}
+.card p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.services .card>div{
+    color: var(--drak-color);
+    font-size: 5rem;
+}
+/*-- End services --*/
+/*-- Strat protofilio --*/
+.protofilio {
+    background: var(--drak-color); /* تصحيح "drak" إلى "dark" */
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.protofilio h2 {
+    display: inline-block;
+    color: white;
+    border-bottom: solid var(--crimson-color);
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+   
+}
+
+.protofilio .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.protofilio .card{
+    background-color: white;
+    border: solid;
+    overflow: hidden;  
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    width: 18em;
+    min-height:250px;
+}
+
+.protofilio button{
+    color: white;
+    background-color: var(--ehab-color );
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 8px;
+}
+
+.protofilio .card-desc{
+    margin: 0px 10px;
+}
+
+.protofilio .card-desc p{
+    font-size: 12px;
+    line-height: 1.32;
+    font-weight: 700;
+}
+
+.protofilio .card-desc>button{
+    align-self: end;  
+    margin-left: 10px;
+    font-weight: 700;
+    margin: 10px;
+}
+.protofilio img{
+    height: 16em;
+    width: 100%;
+    object-fit: cover;
+}
+/*-- End protofilio --*/
+/*-- Strat about --*/
+.about{
+    padding:50px 100px;
+    display: flex;
+    align-items: center;
+}
+.about h2{
+    color: var(--crimson-color);
+}
+.about p{
+    font-size: 1.2rem;
+}
+.about .about-text{
+    text-align: center;
+    width: 60%;
+}
+.about-img{
+    overflow: hidden;
+    width: 40%;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba( 0  0  0 / 40%);
+}
+.img-rtl{
+    margin-left: 30px !important;
+    margin-right: 0px !important;
+}
+/*-- End about --*/
+/*-- Strat Bott --*/
+.Bott{
+    padding: 50px;
+    background-color: var(--drak-color);
+    background-image: url(../images/Desktoop1.jpeg);
+    min-height: 80vh;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-origin: fixed;
+    text-align: center;
+}
+.Bott>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.Bott h2{
+    color: white;
+    border-bottom: solid white;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.Bott img{
+    border-radius: 50%;
+    width: 16em;
+    height: 16em;
+    border: solid white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+/*-- End Bott --*/
+/*-- Strat Contact --*/
+.contact{
+    padding: 100px;
+    background: rgb(26,188,173);
+    background: linear-gradient(0deg, rgba(44,62,89,1) 22%, rgba(26,188,173) 64%);
+    text-align: center;
+}
+.contact h2{
+    color: white;
+    border-bottom: solid;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.input_form{
+width: 100%;
+margin-bottom: 20px;
+position: relative;
+margin-right: 20px;
+}
+.input_form input{
+    border: none;
+    border-bottom: solid var(--ehab-color);
+    outline: none;
+    padding: 0px 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+.input_form input:hover~label,
+.input_form input:valid~label{
+    top: 13%;
+    transform: translateY(-40%);
+}
+.input_form label{
+    position: absolute;
+    pointer-events: none;
+    transition: all 1s;
+    transform: translateY(-50%);
+    font-size: 12px;
+    top: 50%;
+    left: 5px;
+}
+.send{
+    color: white;
+    background-color: var(--ehab-color);
+    transform: all 1s;
+    font-size: 1.6rem;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.send:hover{
+    transform: scale(1.2 );
+    background-color: var(--drak-color);
+}
+/*-- End Contact --*/
+.up{
+    background-color: var(--crimson-color);
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+}
+.up:hover{
+    background-color: var(--ehab-color);
+}
+
+/*-- Strat footer --*/
+.footer{
+    background-color:var(--drak-color);
+    color: white;
+    text-align:center;
+    padding:20px;
+    font-size:1.6rem
+}
+.footer p{
+    color: var(--ehab-color);
+}
+/*-- End footer --*/
+/*--maps--*/
+.map{
+padding: 100px;
+display: flex;
+justify-content: center;
+}
+.map div{
+    width: 100% !important;
+    padding: 20px;
+    box-shadow: 0 10px 35px 0px lightblue !important;
+}
+.map iframe{
+    width: 100% !important;
+}
+/*--End maps--*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--crimson-color); 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ehab-color); 
+}
+
+
+
+
+@media (max-width:600px) {
+    header{
+        padding: 0px 20px;
+    }
+    header h2{
+        font-size: 1.4rem;
+    }
+    header a{
+        font-size: 1.2rem;
+    }
+    .landeing div{
+        margin-left: 40px;
+    }
+    .services .container{
+        padding: 0px;
+    }
+    .protofilio{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        display: block;
+    }
+    .about h2{
+        font-size: 1.7rem;
+        margin: 20px 0px;
+    }
+    .about-img{
+        width: 100%;
+    }
+   .about .about-text {
+    
+        width: 100%;
+    }
+    .contact{
+        padding: 20px;
+    }
+    .map{
+        padding: 20px;
+    }
+    lottie-player{
+        margin: auto;
+    }
+}
